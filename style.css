@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DF6C4F;
+    width: 100%;
+    height: 100dvh;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#block{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.169);
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.winnerBoard {
+    position: absolute;
+    top: 20px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 0px 20px 0.3px black;
+
+    width: fit-content;
+    max-width: 400px;
+    text-wrap: wrap;
+    overflow: auto;
+    height: fit-content;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.winnerBoard>p {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background: linear-gradient(110deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.board {
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    position: relative;
+}
+
+.box {
+    font-size: 280%;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: #ffffff;
+    color: rgb(13, 13, 13);
+    width: 90px;
+    height: 90px;
+
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.397);
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box:active {
+    box-shadow: none;
+}
+
+
+#move {
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#reset,
+#newGame {
+    border-radius: 8px;
+    width: 120px;
+    height: 35px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+#reset {
+    background-color: rgba(0, 0, 0, 0.793);
+}
+
+#newGame {
+    background-color: green;
+}
+
+#reset:hover,
+#newGame:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+@media only screen and (max-width:358px) {
+    body {
+        zoom: 0.7;
+    }
+}
+
+@media only screen and (max-width:245px) {
+    body {
+        zoom: 0.5;
+    }
+}
